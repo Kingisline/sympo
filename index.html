@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- CDN Font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+  integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link href="./vendors/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Vermin+Vibes" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Rye&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Kode+Mono:wght@400..700&family=Rye&display=swap" rel="stylesheet">
+<link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/container.css">
+    <title>QL 1.0</title>
+</head>
+<body>
+
+  <!-- <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/qz0d3h?autoplay=1&muted=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div> -->
+    
+  <div class="overlay">
+    <video preload="auto" autoplay muted loop id="myVideo" style="opacity: 0.8">
+        <source src="./bg/bg.mp4" type="video/mp4" />
+    </video>
+    <div class="over"></div>
+  </div>
+
+  <audio id="bgMusic">
+    <source src="./assets/audio/chub.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+  <!-- <div class="overlay">
+<iframe id="myVideo" allow="fullscreen;autoplay" frameborder="0" allowfullscreen src="https://drive.google.com/drive/u/2/folders/136SUp2YcoV4YX0LoexgNwseVb46o_4Rz/preview"></iframe>
+
+    <div class="over"></div>
+  </div> -->
+
+      <div class="header1">
+        <div class="image1">
+          <img src="assets/logo/2.jpeg" alt="">
+        </div>
+        <h1>Quantum Leap 1.0</h1>
+        <p>Department of Computer Science and Engineering</p>
+      </div>
+
+      <!-- social media section -->
+      <div class="icon-container">
+        <a href="https://www.instagram.com/svcet_events?utm_source=qr&igsh=MWp3a3JuYzd0cm5mZw=="><i class="fab fa-instagram"></i></a>
+        <a href="https://maps.app.goo.gl/X9f5dKjiPYF9RDCt9"><i class="fas fa-map-marker-alt"></i></a>   
+      </div>
+
+    <!-- poster with para text -->
+    <div class="content">
+      <img src="assets/logo/smaple-2.jpeg" alt="Image Description" class="responsive-image">
+      <p class="text">
+          Really excited to announce that we, the Department of <span>Computer Science and Engineering</span>  are coming together all set to emphasize the hidden talents of the disciples.
+          Get ready folks as the symposium <span>Quantum Leap 1.0</span> is down the lane falling on <span>18.10.2024(Friday)</span> </p>
+          <!-- <p>Excited to make a memorable day for you.</p> -->
+    </div>
+
+
+     <!-- <h1>Countdown Timer</h1> -->
+     <h1 class="countdown__header">Countdown Timer</h1>
+     <div class="countdown__wrapper">
+       <div id="countdown" class="countdown">
+         <div class="time">
+           <h2 id="days">00</h2>
+           <small class="time__format">Days</small>
+         </div>
+       </div>
+       <div id="countdown" class="countdown">
+         <div class="time">
+           <h2 id="hours">00</h2>
+           <small class="time__format">Hours</small>
+         </div>
+       </div>
+       <div id="countdown" class="countdown">
+         <div class="time">
+           <h2 id="minutes">00</h2>
+           <small class="time__format">Minutes</small>
+         </div>
+       </div>
+       <div id="countdown" class="countdown">
+         <div class="time">
+           <h2 id="seconds">00</h2>
+           <small class="time__format">Seconds</small>
+         </div>
+       </div>
+     </div>
+
+     <div class="register">
+      <h1>March 10, 2025</h1>
+     </div>
+
+     <div class="but">
+      <a href="https://forms.gle/sySSqutbhQKoZ4KD7" style="--clr: #00ccff; --i: 1"><span>Register</span></a>
+     </div>
+
+
+
+
+<h2 class="events">Technical Events</h2>
+<!-- technical rounds -->
+<div class="container">
+    <div class="card">
+      <div class="circle">
+        <h2>Paper Parade</h2>
+      </div>
+      <div class="des">
+        Share innovative ideas, showcase knowledge, and engage with experts. Compete for recognition, feedback, and exciting rewards. <br>
+        <a href="https://forms.gle/sySSqutbhQKoZ4KD7">Rules</a>
+      </div>
+    </div>
+    <!--  -->
+    <div class="card">
+      <div class="circle">
+        <h2>Code War</h2>
+      </div>
+      <div class="des">
+        Code Wars Challenge: Test your coding skills and compete against others in a fun and challenging coding event. Solve given problems and showcase your prowess! <br>
+        <a href="https://forms.gle/sySSqutbhQKoZ4KD7">Rules</a>
+      </div>
+    </div>
+    <!--  -->
+    <div class="card">
+      <div class="circle">
+        <h2>Scanner Hunt</h2>
+      </div>
+      <div class="des">
+        Join the Scanner Hunt event! Use your skills to decipher codes and solve puzzles while racing against the clock for exciting prizes and bragging rights! <br>
+        <a href="https://forms.gle/sySSqutbhQKoZ4KD7">Rules</a>
+      </div>
+    </div>
+    <!--  -->
+</div>
+
+
+<div class="container">
+    <div class="card">
+        <div class="circle">
+          <h2>Poster making</h2>
+        </div>
+        <div class="des">
+          Unleash your creativity in the Poster Making event! Design impactful posters on relevant themes, showcase your artistic flair, and compete for prizes while making your voice heard! <br>
+          <a href="https://forms.gle/sySSqutbhQKoZ4KD7">Rules</a>
+        </div>
+    </div>
+    <!--  -->
+      <div class="card">
+        <div class="circle">
+          <h2>Debugging</h2>
+        </div>
+        <div class="des">
+          It is the process to identify the failure of implemented code.Debugging typically involves using tools and techniques such as logging, tracing, and code inspection. <br>
+          <a href="https://forms.gle/sySSqutbhQKoZ4KD7">Rules</a>
+        </div>
+      </div>
+      <!--  -->
+</div>  <!--ending of technical div -->
+
+
+  <!--non-technical rounds -->
+<h2 class="events" style="font-size: 2rem;">Non-Technical Events</h2>
+<div class="container">
+    <div class="card">
+      <div class="circle">
+        <h2>Connextion</h2>
+      </div>
+      <div class="des">
+        Showcase your creativity and problem-solving skills at the Connections event! Solve puzzles, link clues, and form connections for an exciting challenge with great rewards. <br>
+        <a href="https://forms.gle/sySSqutbhQKoZ4KD7">Rules</a>
+      </div>
+    </div>
+    <!--  -->
+    <div class="card">
+      <div class="circle">
+        <h2>Free Fire</h2>
+      </div>
+      <div class="des">
+        Join the ultimate Free Fire battle at our symposium! Compete for exciting rewards, showcase your skills, and experience high-intensity gameplay in this action-packed tournament! <br>
+        <a href="#">Rules</a>
+      </div>
+    </div>
+    <!--  -->
+    <div class="card">
+      <div class="circle">
+        <h2>Smash n Splash</h2>
+      </div>
+      <div class="des">
+        Join the intense BGMI tournament at our symposium! Battle against top teams, showcase your tactical skills, and compete for exciting rewards in this high-octane event. <br>
+        <a id="redirectButton" href="#">Rules</a>
+      </div>
+    </div>
+    </div>
+
+<!--  -->
+<div class="container">
+    <div class="card">
+        <div class="circle">
+          <h2>Treasure Hunt</h2>
+        </div>
+        <div class="des">
+          Unleash your inner detective in the Treasure Hunt event! Solve riddles, follow clues, and race against time to uncover hidden treasures and claim exciting rewards. <br>
+          <a href="#">Rules</a>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card">
+        <div class="circle">
+          <h2>Shutter Stop</h2>
+        </div>
+        <div class="des">
+          Capture the moment at our Photography event! Showcase your creativity, artistic vision, and photography skills. Compete for the best shot and win exciting prizes!
+          <a href="#">Rules</a>
+        </div>
+      </div>
+      <!--  -->
+</div>   <!--ending of non-technical div -->
+
+
+
+<!-- general guidelines -->
+ <!-- rules and regulation to be followed -->
+ <h2 class="staff">General Guidelines</h2>
+ <div class="listcontainer">
+  <ul>
+      <li>All participants are required to arrive in a formal attire with their college ID cards.</li>
+      <li>Participants who have applied for more than 1 events are requested to attend it without clashing out the other events</li>
+      <li>Lunch will be provided to all the participants</li>
+      <li>Participants are requested to follow college rules inside the campus.</li>
+      <li>Event venues will be informed prior to the start of the events</li>
+      <!-- <li>Item 6</li> -->
+  </ul>
+</div>
+
+
+<h2 class="staff">Staff Co-Ordinators</h2>
+<!-- staff corrdinates -->
+<div class="boxcontainer">
+    <div class="div">
+        <div class="context">
+            <div class="photo">
+                <a href="">
+                    <img src="./assets/namachi.jpeg" alt="">
+                </a>    
+            </div>
+            <div class="details">
+                <span class="name">Senthil Rajan</span>
+                <span class="place"></span>
+                <p class="job">CSE<br> Head of the Department</p>
+            </div>
+            <div class="buttons">
+                <!-- <button>Message</button>
+                <button>Follow Me!</button> -->
+            </div>
+        </div>
+        <div class="social">
+            <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="div">
+        <div class="context">
+            <div class="photo">
+                <a href="">
+                    <img src="" alt="">
+                </a>    
+            </div>
+            <div class="details">
+                <span class="name">Dr. S.K. Purushothaman</span>
+                <span class="place"></span>
+                <p class="job">CSE <br> Chairman</p>
+            </div>
+            <div class="buttons">
+                <!-- <button>Message</button>
+                <button>Follow Me!</button> -->
+            </div>
+        </div>
+        <div class="social">
+            <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+<!--  -->
+<!-- student coordinate -->
+<h2 class="student">Student Co-Ordinators</h2>
+<!-- staff corrdinates -->
+<div class="boxcontainer">
+    <div class="div">
+        <div class="context">
+            <div class="photo">
+                <a href="">
+                    <img src="./assets/koventhaan.jpeg" alt="">
+                </a>    
+            </div>
+            <div class="details">
+                <span class="name">Koventhaan MP</span>
+                <span class="place"></span>
+                <p class="job">CSE<br> Chairman</p>
+            </div>
+            <div class="buttons">
+                <!-- <button>Message</button>
+                <button>Follow Me!</button> -->
+            </div>
+        </div>
+        <div class="social">
+            <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="div">
+        <div class="context">
+            <div class="photo">
+                <a href="">
+                    <img src="./assets/yuvaraj.png" alt="">
+                </a>    
+            </div>
+            <div class="details">
+                <span class="name">Yuvaraj R</span>
+                <span class="place"></span>
+                <p class="job">CSE <br> Vice Chairman</p>
+            </div>
+            <div class="buttons">
+                <!-- <button>Message</button>
+                <button>Follow Me!</button> -->
+            </div>
+        </div>
+        <div class="social">
+            <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/y_u_v_i___y_u_v_a?utm_source=qr&igsh=djZtemExZmV4Mjlt"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="div">
+        <div class="context">
+            <div class="photo">
+                <a href="">
+                    <img src="./assets/bhuvanesh.jpeg" alt="">
+                </a>    
+            </div>
+            <div class="details">
+                <span class="name">Bhuvaneshwaran V</span>
+                <span class="place"></span>
+                <p class="job">CSE<br> Secretary</p>
+            </div>
+            <div class="buttons">
+                <!-- <button>Message</button>
+                <button>Follow Me!</button> -->
+            </div>
+        </div>
+        <div class="social">
+            <!-- <a href="#"><i class="fab fa-facebook-f"></i></a> -->
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- footer section -->
+
+
+  <footer>
+    <div class="footer-container">
+        <img src="./assets/logo1.png" alt="Left Image" class="footer-image">
+        <div class="footer-middle">
+            <h1>SRI VENKATESHWARA</h1>
+            <h2>COLLEGE OF ENGINEERING AND TECHNOLOGY</h2>
+            <h3>Thirupachur-631203, Tiruvallur TK & DT</h3>
+            <br>
+            <p>Approved by AICTE  New Delhi & Affiliated to Anna University, Chennai</p>
+            <p>A Telugu Minority Institution</p>
+        </div>
+        <img src="./assets/logo2.png" alt="Right Image" class="footer-image">
+    </div>
+</footer>
+
+<!-- <footer>
+  <div class="footer-bottom">
+      <p>copyright&copy; Future X 2024 <span></span></p>
+  </div>
+</footer> -->
+
+<script>
+  function playMusic() {
+      let audio = document.getElementById("bgMusic");
+      if (audio.paused) {
+          audio.play().catch(error => console.log("Autoplay blocked:", error));
+      }
+  }
+</script>
+
+    <script src="app.js"></script>
+</body>
+</html>
