@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules and Regulations</title>
+    <style>
+
+@font-face {
+    font-family: 'MyGamingFont';
+    src: url('./ARCADECLASSIC.TTF') format('truetype');
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url('./bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: rgb(0, 0, 0, 0.9);
+            border-radius: 10px;
+            padding: 30px;
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff;
+            font-family: 'MyGamingFont', Sans;
+            letter-spacing: 7px;
+        }
+
+        .rules-list {
+            list-style-type: none;
+        }
+
+        .rule-item {
+            background-color: rgba(66,66,66);
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #4a6fa5;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .rule-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .rule-number {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 15px;
+            color: #e74c3c; /* Red color for the index number */
+            width: 25px;
+            flex-shrink: 0;
+        }
+
+        .rule-description {
+            color: #fff;
+            line-height: 1.5;
+            flex-grow: 1;
+            font-size: 15px;
+            font-family: 'MyGamingFont',  ;
+            letter-spacing: 2px;
+            /* font-weight: 500; */
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .rule-item {
+                padding: 12px;
+            }
+
+            .rule-number {
+                font-size: 1.1rem;
+                margin-right: 10px;
+            }
+
+            .rule-description {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+            }
+
+            .rule-item:hover {
+                transform: scale(1.03);
+            }
+
+            .rule-number {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rules and Regulations</h1>
+        <ul class="rules-list" id="rulesList">
+            <!-- Rules will be added here dynamically -->
+        </ul>
+    </div>
+
+    <script>
+        // Sample rules data - now just descriptions without titles
+        const rulesData = [
+       " One hour will be provided " 
+," Mobile phones should only be used for scanning"  
+," Two floors will be set up for playing" 
+," A team must have minimum two people and maximum four people " 
+," Only two members in a group are allowed to have phones" 
+," Separate map will be provided to the teams" 
+," First two teams to arrives will be declared the winner and runner" 
+        ];
+
+        // Function to render rules
+        function renderRules() {
+            const rulesList = document.getElementById('rulesList');
+            
+            rulesData.forEach((description, index) => {
+                const listItem = document.createElement('li');
+                listItem.className = 'rule-item';
+                
+                const numberElement = document.createElement('div');
+                numberElement.className = 'rule-number';
+                numberElement.textContent = (index + 1);
+                
+                const descriptionElement = document.createElement('div');
+                descriptionElement.className = 'rule-description';
+                descriptionElement.textContent = description;
+                
+                listItem.appendChild(numberElement);
+                listItem.appendChild(descriptionElement);
+                rulesList.appendChild(listItem);
+            });
+        }
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            renderRules();
+        });
+    </script>
+</body>
+</html>
